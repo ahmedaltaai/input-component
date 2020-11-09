@@ -1,3 +1,6 @@
+# Live Preview 
+https://input-component.herokuapp.com/
+
 ## Input Component Library
 
 This component has been made as a qualification exercise for the position as a web dev.
