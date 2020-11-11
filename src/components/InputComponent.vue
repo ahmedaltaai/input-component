@@ -40,6 +40,7 @@
               v-model="person.role"
               type="checkbox"
               :value="role"
+              :name="role"
             >
             <label :for="role">{{ role }}</label>
           </div>

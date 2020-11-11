@@ -44,15 +44,15 @@ describe('Testing Input Component', () => {
       },
     });
 
-    const checkbox = wrapper.find('div').findAll('input[type="checkbox"]');
-    checkbox.at(1).element.selected = true;
-    checkbox.trigger('change');
+    // const checkbox = wrapper.find('input[name="Write"]');
+    await wrapper.find('input[name="Write"]').trigger('click');
+    // checkbox.at(1).element.selected = true;
+    // checkbox.trigger('change');
     // console.log(checkbox.html());
-    // await checkbox.at(2).element.checked;
+    // await checkbox.at(1).setChecked();
 
 
-    expect(checkbox.at(1)).toBe();
-    // expect(checkbox.at(1)).toEqual(true);
+    expect(wrapper.emitted()).toBeTruthy();
   });
 
   it('emitting...', async () => {
