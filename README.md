@@ -9,7 +9,8 @@ The goal would be to install this component as a library in the application and 
 It has a multiselect for job titles and permission specifier as checkboxes
 
 ## install & basic usage
-` npm install qinput `
+``` npm install qinput ```
+
 
 ```
 <template>
@@ -25,7 +26,9 @@ It has a multiselect for job titles and permission specifier as checkboxes
 </template>
 
 <script>
+//importing the component from node_modules
   import InputComponent from 'qinput'
+  
   export default {
     components: { InputComponent },
     data () {
@@ -34,9 +37,9 @@ It has a multiselect for job titles and permission specifier as checkboxes
         'CEO', 'CTO', 'COO', 'CWO', 'Software Engineer',
       ],
       roles: ['Read', 'Write', 'Delete'],
-      }
-    }
-  }
+      };
+    },
+  };
 </script>
 ```
 
