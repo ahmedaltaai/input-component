@@ -2,13 +2,19 @@
   "name": "qinput",
   "version": "0.0.1",
   "private": false,
-  "main": "./dist/InputComponent.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit --watch",
     "lint": "vue-cli-service lint",
     "build-lib": "vue-cli-service build --target lib --name InputComponent src/main.js"
   },
+  "main": "./dist/InputComponent.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json"
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
@@ -16,6 +22,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "^4.5.8",
     "@vue/cli-service": "~4.5.0",
     "@vue/test-utils": "^1.1.1",
     "babel-eslint": "^10.1.0",
@@ -24,10 +31,5 @@
     "eslint-plugin-vue": "^6.2.2",
     "vue-jest": "^3.0.7",
     "vue-template-compiler": "^2.6.11"
-  },
-  "files": [
-    "dist/*",
-    "src/*",
-    "*.json"
-  ]
+  }
 }
